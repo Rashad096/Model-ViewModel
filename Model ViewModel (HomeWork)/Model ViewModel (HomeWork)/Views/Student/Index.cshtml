@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h2>Students</h2>
+
+<ul>
+
+    @foreach(Student item in ViewBag.Students)
+    {
+        <li>@item.FullName - StudentId:@item.Id - Point:@item.Point - GroupId:@item.GroupId - @item.GroupName</li>
+    }
+
+   
+</ul>
+
+
+
